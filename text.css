@@ -1,6 +1,57 @@
 body {
     font-weight: 100;
 }
+h1 {
+    width:300px;
+    padding:10px;
+    margin:auto;
+    /*border-image:linear-gradient(45deg, red,orange,yellow,green,lightblue,blue,blueviolet);*/
+    /*border-image-width: 10px;*/
+    /*border-image-slice: 1%;*/
+   animation: borderColor 3s linear infinite;
+}
+@keyframes borderColor {
+    0%{
+        border-image:linear-gradient(90deg, red,orange,yellow,green,lightblue,blue,blueviolet);
+        border-image-width: 0px;
+        border-image-slice: 1%;
+    }
+    10% {
+    border-image: linear-gradient(90deg, orange, yellow, green, lightblue, blue, blueviolet, red);
+        border-image-width: 10px;
+        border-image-slice: 2%;
+    }
+    25% {
+    border-image: linear-gradient(90deg, yellow, green, lightblue, blue, blueviolet, red, orange);
+        border-image-width: 20px;
+        border-image-slice: 3%;
+}
+    40%{
+        border-image: linear-gradient(90deg, green, lightblue, blue, blueviolet, red, orange, yellow);
+        border-image-width: 40px;
+        border-image-slice: 4%;
+    }
+    50% {
+        border-image: linear-gradient(90deg, lightblue, blue, blueviolet, red, orange, yellow, green);
+        border-image-width: 40px;
+        border-image-slice: 5%;
+    }
+    75% {
+        border-image: linear-gradient(90deg, blue, blueviolet, red, orange, yellow, green, lightblue);
+        border-image-width: 206px;
+        border-image-slice: 6%;
+    }
+    85%{
+        border-image: linear-gradient(90deg, blueviolet, red, orange, yellow, green, lightblue, blue);
+        border-image-width: 10px;
+        border-image-slice: 7%;
+    }
+    100% {
+        border-image:linear-gradient(90deg, red,orange,yellow,green,lightblue,blue,blueviolet);
+        border-image-width: 0px;
+        border-image-slice: 8%;
+    }
+}
 
 p {
     margin: 5px;

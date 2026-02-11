@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ea5959;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+   corner-shape: scoop   ;
+   border-radius: 30px;
+}

@@ -3,7 +3,33 @@ body {
     padding: 0;
     height: 100%;
     width: 100%;
+    font-size: 24px;
 }
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    height: 2rem;
+    width: 5rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border: solid 0.1rem black;
+    border-radius: 1rem;
+    /*set background image*/
+/*    background-image: url("./img/IMG_0630.HEIC");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;*/
+    
+    /*color: black;*/
+    /*font-size: 0.9rem;*/
+    /*background-color: #f1e8e8;*/
+}
+
 
 .box {
     display: flex;

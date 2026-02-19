@@ -28,28 +28,27 @@ function buttonsDisable(){
 
 function startCountdown() {
    buttonsDisable();
-    box.textContent = `${count}`;
-   timer ??= setInterval(countdown, 1000);
+   timer ??= setInterval(countdown, 1);
 }
 
 function countdown( ) {
     count--;
     if (count >= 1) {
         console.log(count);
-        box.textContent = `${count}`;
+        timeView();
     } else {
         box.textContent = 'END';
+        return clean();
     }
 }
 function  timerClock() {
     count++;
-    box.textContent = `${count}`;
+    timeView();
 }
 
 function startTimer() {
     buttonsDisable();
-    box.textContent = `${count}`;
-    timer ??= setInterval(timerClock, 1000);
+    timer ??= setInterval(timerClock, 1);
 }
 
 
@@ -60,7 +59,8 @@ function clean() {
     } else {
         count = 10;
         buttonClean.disabled = true;
-        box.textContent = `${count}`;
+        timeView();
+
     }
     buttonStart.disabled = false;
     buttonTimer.disabled = false;
@@ -74,3 +74,14 @@ buttonClean.addEventListener("click", clean);
 buttonTimer.addEventListener("click", () => {
     startTimer();
 });
+
+
+function timeView() {
+    const secView = count % 60;
+    const minViewFull = Math.floor(count / 60 );
+    const hourViewFull = Math.floor(minViewFull / 60);
+    console.log(hourViewFull);
+    console.log(minViewFull);
+    console.log(secView);
+    box.textContent = `${hourViewFull % 60} : ${minViewFull % 60} : ${secView}`;
+        }

@@ -1,4 +1,9 @@
 
+
+
+
+
+
 const box = document.getElementById("box")
 const buttonStart = document.getElementById('start');
 const buttonClean = document.getElementById('clean');
